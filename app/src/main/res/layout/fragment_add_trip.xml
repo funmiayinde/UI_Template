@@ -1,0 +1,297 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ui_template.fragment.AddTripFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DESTINATION STATE"
+            android:layout_marginTop="20px"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15px"
+            android:textColor="#00a0ea"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.4dp"
+            android:layout_marginLeft="0dp"
+            android:background="#EBEBEB"
+            android:layout_marginTop="10px"/>
+
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:hint="@string/select_state"
+            android:layout_marginTop="10dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DESTINATION TERMINAL"
+            android:layout_marginTop="10px"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15px"
+            android:textColor="#00a0ea"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.4dp"
+            android:layout_marginLeft="0dp"
+            android:background="#EBEBEB"
+            android:layout_marginTop="10px"/>
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:hint="@string/select_state"
+            android:layout_marginTop="10dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/vehicleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VEHICLE(S)"
+                    android:textColor="#00a0ea"
+                    android:textStyle="bold"
+                    android:layout_margin="15dp"/>
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:layout_toRightOf="@+id/vehicleText"
+                    android:text="+Add Vehicle"
+                    android:layout_marginLeft="150dp"
+                    android:textSize="10sp"
+                    android:layout_marginTop="10dp"
+                    android:background="#00a0ea"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bus 1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#00a0ea" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#EBEBEB" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DRIVER"
+                android:layout_marginTop="50px"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="15px"
+                android:textColor="#00a0ea"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.4dp"
+                android:layout_marginLeft="0dp"
+                android:background="#EBEBEB"
+                android:layout_marginTop="10px"/>
+            <Spinner
+                android:id="@+id/spinner3"
+                android:layout_width="match_parent"
+                android:hint="@string/select_state"
+                android:layout_marginTop="10dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VEHICLE"
+                android:layout_marginTop="10px"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="15px"
+                android:textColor="#00a0ea"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.4dp"
+                android:layout_marginLeft="0dp"
+                android:background="#EBEBEB"
+                android:layout_marginTop="10px"/>
+            <Spinner
+                android:id="@+id/spinner4"
+                android:layout_width="match_parent"
+                android:hint="@string/select_state"
+                android:layout_marginTop="10dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TIME"
+                    android:layout_marginTop="50px"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="35px"
+                    android:textColor="#00a0ea"/>
+
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:background="#EBEBEB" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PERKS"
+                    android:layout_marginTop="50px"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15px"
+                    android:textColor="#00a0ea"/>
+
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="40dp"
+                    android:background="#EBEBEB" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="35dp"
+                    android:editable="false"
+                    android:background="#0000"
+                    android:hint="Set Time"
+                    android:inputType="text"
+                    android:padding="16dp"
+                    android:textColor="#7B7B7B"
+                    android:textColorHint="#EBEBEB"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:background="#EBEBEB" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="35dp"
+                    android:background="#0000"
+                    android:inputType="text"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="16dp"
+                    android:textColor="#7B7B7B"
+                    android:textStyle="bold"
+                    android:textColorHint="#EBEBEB"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="40dp"
+                    android:background="#EBEBEB" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="15dp"
+            android:text="ADD TRIP"/>
+    </LinearLayout>
+</ScrollView>
